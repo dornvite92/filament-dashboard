@@ -49,7 +49,7 @@
 ### 1. Klonowanie repozytorium
 ```bash
 cd ~
-git clone https://github.com/TWOJ_USERNAME/filament-dashboard.git
+git clone https://github.com/dornvite92/filament-dashboard.git
 cd filament-dashboard
 ```
 
@@ -73,7 +73,7 @@ Dodaj do `/etc/nginx/sites-available/mainsail`:
 ```nginx
 # Filament Dashboard
 location /filament/ {
-    alias /home/TWOJ_USER/filament_dashboard/;
+    alias /home/damian/filament_dashboard/;
     index index.html;
     add_header Cache-Control "no-cache";
 }
