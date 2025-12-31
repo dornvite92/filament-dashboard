@@ -29,6 +29,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 import { HistoryFilters } from './HistoryFilters';
+import { HistoryStats } from './HistoryStats';
 import { StatusChip } from '../common';
 import type { HistoryRecord, HistoryFilters as FilterType, SortDirection } from '../../types';
 
@@ -386,6 +387,9 @@ export function History({
           )}
         </CardContent>
       </Card>
+
+      {/* Statystyki dla przefiltrowanych rekordów */}
+      <HistoryStats records={sortedRecords} loading={loading} />
     </Box>
   );
 }
