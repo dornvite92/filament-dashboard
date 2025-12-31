@@ -1,0 +1,36 @@
+/**
+ * Podstawowe style CSS dla Filament Dashboard
+ * Autor: Damian Misko via Claude Code
+ * Data: 2025-12-31
+ */
+
+/* Reset podstawowy - resztę obsługuje CssBaseline z MUI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gładkie przewijanie */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Usunięcie domyślnych stylów scrollbara (dla Chrome/Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 217, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 217, 255, 0.5);
+}
